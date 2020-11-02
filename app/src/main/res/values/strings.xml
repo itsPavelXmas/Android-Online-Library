@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OnlineLibraRy</string>
+    <string name="invalid_name">Please Enter Valid Format</string>
+    <string name="invalid_username">Please Enter Valid Username</string>
+    <string name="invalid_email">Please enter Valid email</string>
+    <string name="invalid_phone">Please insert Valid phone number</string>
+    <string name="invalid_password">Please insert Valid Password</string>
+</resources>
