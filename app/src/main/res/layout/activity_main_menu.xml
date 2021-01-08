@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/Layout"
+    tools:context=".MainMenu">
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/wave_header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:mwhStartColor="#FF3B3B"
+        app:mwhCloseColor="#03A9F4"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnSellForm"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="125dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="240dp"
+
+
+        android:background="@drawable/buttonshape"
+        android:fontFamily="sans-serif-light"
+        android:text="Add Book to Sell"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnViewBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/buttonshape"
+        android:text="View Added Books"
+        android:fontFamily="sans-serif-light"
+
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSellForm" />
+
+    <Button
+        android:id="@+id/btnSearchBook"
+        android:layout_width="194dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+
+        android:background="@drawable/buttonshape"
+        android:fontFamily="sans-serif-light"
+        android:text="Shazam your Author"
+
+        android:textColor="#FFFFFF"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewBooks" />
+
+    <Button
+        android:id="@+id/btnBuyBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+
+        android:background="@drawable/buttonshape"
+        android:fontFamily="sans-serif-light"
+
+        android:text="Read Books"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearchBook" />
+
+    <Button
+        android:id="@+id/btnGoToProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="276dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="sans-serif-light"
+
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuyBooks" />
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/wave_footer"
+        android:layout_width="417dp"
+        android:layout_height="107dp"
+        android:layout_alignParentBottom="true"
+        android:scaleY="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:mwhCloseColor="#673AB7"
+        app:mwhStartColor="#03A9F4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

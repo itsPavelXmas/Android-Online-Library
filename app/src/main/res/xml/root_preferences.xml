@@ -1,0 +1,56 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="General Library Settings">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="Language"
+            app:useSimpleSummaryProvider="true" />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Genre Settings">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Show favorites Genres"
+            app:summaryOff="Show only your favorite Books "/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Group By">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Favorite Books"
+            app:summaryOff="Show only your favorite Books "/>
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="Show the authors and choose the lecture "
+            app:title="Authors" />
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Genre"
+            app:summaryOff="Show the genres in order to search your lecture"/>
+
+
+
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Functionalities">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_preference_1"
+            android:title="Always keep me up to date " />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_preference_1"
+            android:title="Newsletter " />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

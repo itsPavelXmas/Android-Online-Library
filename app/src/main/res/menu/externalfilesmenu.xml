@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/TXT"
+        android:title="Save to TXT file" />
+    <item
+        android:id="@+id/CSV"
+        android:title="Save to CSV file" />
+</menu>

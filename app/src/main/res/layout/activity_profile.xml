@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="158dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/bookface" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="208dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="341dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:textColor="#000000"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="343dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:textColor="#000000"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/wave_footer"
+        android:layout_width="417dp"
+        android:layout_height="107dp"
+        android:layout_alignParentBottom="true"
+        android:scaleY="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:mwhCloseColor="#673AB7"
+        app:mwhStartColor="#03A9F4" />
+
+    <CheckBox
+        android:id="@+id/cbNewsLetter"
+        android:layout_width="283dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="Newsletter Subscriber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFF"
+        android:layout_marginTop="32dp"
+        android:text="Change Subscription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbNewsLetter" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="409dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="sans-serif-light"
+        android:text="Delete this Profile?"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+</androidx.constraintlayout.widget.ConstraintLayout>

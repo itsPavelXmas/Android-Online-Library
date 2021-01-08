@@ -5,4 +5,34 @@
     <string name="invalid_email">Please enter Valid email</string>
     <string name="invalid_phone">Please insert Valid phone number</string>
     <string name="invalid_password">Please insert Valid Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="instructions">You heard the name but you cant remember?Only a partial text,word can help you discover the full name and author of the Book! </string>
+    <string name="button_text">Search Books</string>
+    <string name="input_hint">Book Title</string>
+    <string name="no_search_term">Please enter a search term</string>
+    <string name="no_network">Please check your network connection and try again.</string>
+    <string name="no_results">No Results Found</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string-array name="paymentArray">
+        <item>Cash</item>
+        <item>Card</item>
+        <item>PayPal</item>
+        <item>Check</item>
+    </string-array>
 </resources>
